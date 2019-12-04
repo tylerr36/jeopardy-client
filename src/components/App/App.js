@@ -8,6 +8,9 @@ import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
+import Questions from '../Questions/Questions'
+import Question from '../Questions/Question'
+import CreateQuestion from '../Questions/Create-Question'
 
 class App extends Component {
   constructor () {
@@ -53,6 +56,15 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/questions' render={() => (
+            <Questions alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/create-question' render={() => (
+          <CreateQuestion alert={this.alert} user={user}/>
+          )} />
+          <AuthenticatedRoute user={user} path='/questions/:id' render={() => (
+          <Question alert={this.alert} user={user}/>
           )} />
         </main>
       </Fragment>
