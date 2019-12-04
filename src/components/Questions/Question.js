@@ -80,6 +80,7 @@ const Question = props => {
   }, [])
 
   const handleDelete = event => {
+    console.log(props.match)
     axios({
       url: `${apiUrl}/questions/${props.match.params.id}`,
       method: 'DELETE',
