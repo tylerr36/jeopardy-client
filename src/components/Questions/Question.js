@@ -110,8 +110,8 @@ const Question = props => {
       data: { questionEdit }
     })
       .then(() => {
-        props.alert({ heading: 'Success', message: 'Update your question!', variant: 'warning' })
-        props.history.push(`/questions/${props.match.params.id}`)
+        props.alert({ heading: 'Question updated!', message: 'Here is your updated list of questions!', variant: 'warning' })
+        props.history.push(`/questions`)
       })
       .catch(() => {
         props.alert({ heading: 'Uh oh', message: 'Something went wrong', variant: 'danger' })
@@ -132,7 +132,7 @@ const Question = props => {
       <h2>{question.question}</h2>
       <h2>{question.answer}</h2>
       {/* Only show a delete button if the question belongs to the user/user's ID */}
-      {userId === question.owner && <Button onClick ={handleUpdate} variant={'danger'}>Update</Button>}
+      {/*userId === question.owner && <Button onClick ={handleUpdate} variant={'danger'}>Update</Button>*/}
       {userId === question.owner && <Button onClick ={handleDelete} variant={'danger'}>Delete</Button>}
 
 

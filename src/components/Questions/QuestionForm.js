@@ -6,7 +6,7 @@ const QuestionForm = ({ question, handleSubmit, handleChange, cancelPath }) => (
     <label htmlFor="question">Question</label>
     <input
       id="question"
-      placeholder="Enter your question!"
+      placeholder="Enter/update question!"
       value={question.question}
       name="question"
       onChange={handleChange}
@@ -15,7 +15,7 @@ const QuestionForm = ({ question, handleSubmit, handleChange, cancelPath }) => (
     <label htmlFor="answer">Answer</label>
     <input
       id="answer"
-      placeholder="Enter answer"
+      placeholder="Enter/update answer!"
       value={question.answer}
       name="answer"
       onChange={handleChange}

@@ -1,8 +1,16 @@
 @import '~bootstrap/scss/bootstrap';
 h1 {
-  color: blue;
+  color: #0F00DD;
 }
 
 #root {
-  color: red;
+  color: #0F00DD;
+}
+
+.navbar {
+  color: #FBE556;
+}
+
+.bg-primary {
+    background-color: #0F00DD !important;
 }

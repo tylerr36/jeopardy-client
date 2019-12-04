@@ -24,7 +24,7 @@ const Questions = props => {
       })
     // calling the alert here from the app.js file
     // alert function in the app.js file is expecting a [heading, message, variant], so we have to add those in brackets below
-      .then(() => props.alert({ heading: 'Success', message: 'You got questions', variant: 'success' }))
+      .then(() => props.alert({ heading: 'Here are your questions!', message: 'Click a question to see its answer or modify the question!', variant: 'success' }))
       .catch(console.error)
   }, [])
 

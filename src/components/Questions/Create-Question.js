@@ -24,19 +24,22 @@ const CreateQuestion = props => {
       data: { question }
     })
       .then(response => {
-        props.alert({ heading: 'Success', message: 'Great question!', variant: 'success' })
+        props.alert({ heading: 'Great question!', message: 'Why not create another!', variant: 'success' })
         // props.history.push(`/questions/${response.data.question._id}`)
       })
       .catch(console.error)
   }
 
   return (
+    <div>
+      <h1>Create a question!</h1>
     <QuestionForm
       question={question}
       handleChange={handleChange}
       handleSubmit={handleSubmit}
       cancelPath='/'
     />
+    </div>
   )
 }
 
