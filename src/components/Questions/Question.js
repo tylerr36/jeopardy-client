@@ -102,11 +102,11 @@ const Question = props => {
 
   return (
     <div>
-      {/* if question is true, then output the question title, otherwise put a paragraph saying "Loading" */}
+      {/* if question is true, then output the question, otherwise put a paragraph saying "Loading" */}
       <h2>{question.question}</h2>
       <h2>{question.answer}</h2>
-      {/* Only show a delete button if the question belong to the user/user's ID */}
-      {userId === question.owner._id && <Button onClick ={handleDelete} variant={'danger'}>Delete</Button>}
+      {/* Only show a delete button if the question belongs to the user/user's ID */}
+      {userId === question.owner && <Button onClick ={handleDelete} variant={'danger'}>Delete</Button>}
     </div>
   )
 }

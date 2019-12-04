@@ -61,10 +61,10 @@ class App extends Component {
             <Questions alert={this.alert} user={user} />
           )} />
           <AuthenticatedRoute user={user} exact path='/create-question' render={() => (
-          <CreateQuestion alert={this.alert} user={user}/>
+          <CreateQuestion alert={this.alert} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/questions/:id' render={() => (
-          <Question alert={this.alert} user={user}/>
+          <Question alert={this.alert} user={user} />
           )} />
         </main>
       </Fragment>
