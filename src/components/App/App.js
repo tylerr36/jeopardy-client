@@ -11,6 +11,7 @@ import ChangePassword from '../ChangePassword/ChangePassword'
 import Questions from '../Questions/Questions'
 import Question from '../Questions/Question'
 import CreateQuestion from '../Questions/Create-Question'
+import UpdateQuestion from '../Questions/Update-Question'
 
 class App extends Component {
   constructor () {
@@ -65,6 +66,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/questions/:id' render={() => (
           <Question alert={this.alert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/questions/:id/update-question' render={() => (
+          <UpdateQuestion alert={this.alert} user={user} />
           )} />
         </main>
       </Fragment>

@@ -62,9 +62,11 @@ import axios from 'axios'
 import { withRouter } from 'react-router-dom'
 import apiUrl from '../../apiConfig'
 import Button from 'react-bootstrap/Button'
+import QuestionForm from './QuestionForm'
 
 const Question = props => {
   const [question, setQuestion] = useState(null)
+  const [questionEdit, setQuestionEdit] = useState({question: '', answer: ''})
   const userId = props.user._id
 
   useEffect(() => {
@@ -80,7 +82,6 @@ const Question = props => {
   }, [])
 
   const handleDelete = event => {
-    console.log(props.match)
     axios({
       url: `${apiUrl}/questions/${props.match.params.id}`,
       method: 'DELETE',
@@ -97,6 +98,30 @@ const Question = props => {
       })
   }
 
+  const handleUpdate = event => {
+    event.preventDefault()
+    console.log(props.match)
+    axios({
+      url: `${apiUrl}/questions/${props.match.params.id}`,
+      method: 'PATCH',
+      headers: {
+        'Authorization': `Bearer ${props.user.token}`
+      },
+      data: { questionEdit }
+    })
+      .then(() => {
+        props.alert({ heading: 'Success', message: 'Update your question!', variant: 'warning' })
+        props.history.push(`/questions/${props.match.params.id}`)
+      })
+      .catch(() => {
+        props.alert({ heading: 'Uh oh', message: 'Something went wrong', variant: 'danger' })
+      })
+  }
+  const handleChange = event => {
+    event.persist()
+    setQuestionEdit({ ...questionEdit, [event.target.name]: event.target.value })
+  }
+
   if (!question) {
     return <p>Loading...</p>
   }
@@ -107,7 +132,20 @@ const Question = props => {
       <h2>{question.question}</h2>
       <h2>{question.answer}</h2>
       {/* Only show a delete button if the question belongs to the user/user's ID */}
+      {userId === question.owner && <Button onClick ={handleUpdate} variant={'danger'}>Update</Button>}
       {userId === question.owner && <Button onClick ={handleDelete} variant={'danger'}>Delete</Button>}
+
+
+      {/* if question is true, then output the question, otherwise put a paragraph saying "Loading" */}
+      {/*<h2>{question.question}</h2>
+      <h2>{question.answer}</h2>*/}
+      {/* Only show a delete button if the question belongs to the user/user's ID */}
+      <QuestionForm
+        question={questionEdit}
+        handleChange={handleChange}
+        handleSubmit={handleUpdate}
+        cancelPath='/'
+      />
     </div>
   )
 }
