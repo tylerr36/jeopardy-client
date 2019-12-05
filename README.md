@@ -28,13 +28,14 @@ After successfully testing all trivia question CRUD actions on the back end, I b
 
 Styling changed were added as a final step.
 
-![Screenshot](https://i.imgur.com/nf5gnfd.png)
-
 [Wireframes](https://i.imgur.com/prkXnkM.jpg)
 
 [User Stories](https://i.imgur.com/cI2JEQO.png)
 
-## Future Goals- Create question categories, with five questions being assigned to each category.
+![Screenshot](https://i.imgur.com/nf5gnfd.png)
+
+## Future Goals
+- Create question categories, with five questions being assigned to each category.
 - Assign values to questions.
 - View categories created by others, and be able to use their and/or categories to fill a 6-category gameboard.
  - Save your selected 6-category board so you can challenge someone else to the same 30 questions.
