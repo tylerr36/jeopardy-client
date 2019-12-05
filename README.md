@@ -34,8 +34,8 @@ Styling changed were added as a final step.
 
 [User Stories](https://i.imgur.com/cI2JEQO.png)
 
-## Future Goals- Create question categories, with five questions being assigend to each category.
+## Future Goals- Create question categories, with five questions being assigned to each category.
 - Assign values to questions.
-- View categories created by others, and be able to use their and/or cateogies to fill a 6-category gameboard.
+- View categories created by others, and be able to use their and/or categories to fill a 6-category gameboard.
  - Save your selected 6-category board so you can challenge someone else to the same 30 questions.
  - Add a field to submit answers, so that they are later compared against the correct answer, with points being automatically added or deducted based on a correct or incorrect answer.
