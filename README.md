@@ -6,6 +6,12 @@ This app allows users to create questions with corresponding answers, designed s
   - [Deployed back-end API](https://secure-plains-22928.herokuapp.com/)
   - [Jeopardy API Repository](https://github.com/tylerr36/jeopardy-api)
 
+## Setup and Installation
+1. Fork and clone this repository
+2. Change into the new directory
+3. Install dependencies with `npm install`.
+4. Run `git checkout -b yournewbranch` with a branch name of your choice in place of "yournewbranch" to create the check out to your new branch.
+
 ## Technologies Used
   - React
   - Bootstrap
@@ -14,41 +20,20 @@ This app allows users to create questions with corresponding answers, designed s
   - Git
 
 ## The Approach
-My approach was to first understand what I wanted for an application, which was to allow for users to create categories of questions, able to be viewed by other users. I then thought about what from that idea could be accomplished within the four day time limit while meeting all requirements. I decided to focus on allowing user to be able to create and store trivia questions, with categories and viewing of other people's categories/questions to be added after submission.
+My approach was to first understand what I wanted for an application, which was to allow for users to start with an empty Jeopardy board, and then choose six categories, each of which would have five questions, thus filling the 30-question board. The signed-in user could create a game board from his or her categories, or from the categories of others. After analyzing what could be accomplished within the four day time limit while meeting all project requirements, I decided to focus on allowing users to be able to create and store their own trivia questions, with answers only able to be viewed after an extra click, so that the user could still display his or her questions to others without immediately revealing answers.
 
+Once I had decided what my plan was within the timeframe, I created wireframes, an ERD, and user stories to represent the app's goals
 
+After successfully testing all trivia question CRUD actions on the back end, I built the front-end framework to allow a user to create trivia questions. Once questions were successfully created and stored, I moved to indexing the questions, following by deletion and modification. When troubleshooting, I looked at similar examples from other React-based front-end projects to try to find parallels. When this was not successful, I used the collective knowledge of my trusty classmates and instructors.
 
-After testing all CRUD actions on the backend, we built Handlebars templates for the auth, event, and rsvp actions. We then began testing the actions from the front end. After successfully implementing all client-side functions and AJAX calls, we began styling the app and adjusting Handlebars templates.
+Styling changed were added as a final step.
 
-Our team also utilized our slack channel to communicate ideas, helpful links for a problem,
-and updates to other team members if changes were being made outside of our fixed on working hours.
+![Wireframes](https://i.imgur.com/prkXnkM.jpg)
 
-##Future Goals
- - We want to finish our mobile accessibility for the site (we have the landing age as a WIP)
- - We want to remove the form fields for Update/Delete Event and Create RSVP and turn them into hyperlinks to create a more user friendly site. This would also include a hidden form field for rsvps that references the listing id when used.
- - We want to utilize a calendar api in the future so that users can search by date/month and view events within, and try Moments.js to clean up the displayed times for events.
- - refactor, refactor, refactor!
+![User Stories](https://i.imgur.com/cI2JEQO.png)
 
-# User Stories
-
-## Auth:
-<li>As an unregistered user, I would like to sign up with a unique email and password.</li>
-<li>As a registered user, I would like to sign in with my email and password</li>
-<li>As a signed in user, I would like to change my password</li>
-<li>As a signed in user, I would like to sign out.</li>
-
-## API:
-
-<li>As an unregistred user, I would like to see all events.</li>
-<li>As an unregistred user, I would like to navigate through events by date.</li>
-<li>As an unregistred user, I would like to see a list of all my created and rsvp's events.</li>
-<li>As a signed in user, I would like to RSVP to an event.</li>
-<li>As a signed in user, I would like to create my own event.</li>
-<li>As a signed in user, I would like to update my own events.</li>
-<li>As a signed in user, I would like to delete my own event.</li>
-
-# Wire Frames
-![Screenshot](./public/wireframes_landing_page_1_2.png)
-![Screenshot](./public/wireframes_2.png)
-![Screenshot](./public/wireframe_3.png)
-![Screenshot](./public/wireframe_4.png)
+## Future Goals- Create question categories, with five questions being assigend to each category.
+- Assign values to questions.
+  - View categories created by others, and be able to use their and/or cateogies to fill a 6-category gameboard.
+ - Save your selected 6-category board so you can challenge someone else to the same 30 questions.
+ - Add a field to submit answers, so that they are later compared against the correct answer, with points being automatically added or deducted based on a correct or incorrect answer.
