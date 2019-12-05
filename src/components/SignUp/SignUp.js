@@ -31,7 +31,7 @@ class SignUp extends Component {
       .then(() => signIn(this.state))
       .then(res => setUser(res.data.user))
       .then(() => alert({
-        heading: 'Sign Up Success',
+        heading: 'You are signed up!',
         message: messages.signUpSuccess,
         variant: 'success'
       }))

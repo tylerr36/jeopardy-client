@@ -5,6 +5,40 @@
 
 #root {
   color: #FBE556;
+}
+
+.container {
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #0F00AD;
+  opacity: 94%;
+}
+
+.form-label{
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+}
+
+.list-group-item {
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+  background-color: #0F30DD;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #0F00DD;
+  opacity: 87%;
+}
+
+.active{
+  color: #FBE556;
   text-shadow: 2px 2px #000000;
 }
 
@@ -12,9 +46,10 @@
 //   color: #FBE556;
 // }
 
-// .bg-primary {
-//     background-color: #0F00DD !important;
-// }
+.bg-primary {
+    background-color: #0F00DD !important;
+}
+
 
 body {
   background-attachment: fixed;
@@ -23,4 +58,14 @@ body {
   background-size: cover;
   margin: 0;
   padding-top: 0;
+}
+
+.basic-navbar-nav {
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+}
+
+.nav-link{
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
 }
