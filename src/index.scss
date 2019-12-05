@@ -3,10 +3,6 @@
 //   color: #0F00DD;
 // }
 
-#root {
-  color: #FBE556;
-}
-
 .container {
   color: #FBE556;
   text-shadow: 2px 2px #000000;
@@ -66,6 +62,21 @@ body {
 }
 
 .nav-link{
+  color: #FBE556;
+  text-shadow: 2px 2px #000000;
+}
+
+#root {
+  color: #FBE556;
+}
+
+.navbar-dark .navbar-brand {
+    color: #FBE556;
+    text-shadow: 2px 2px #000000;
+    font-size: 35px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: #FBE556;
   text-shadow: 2px 2px #000000;
 }
