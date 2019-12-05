@@ -21,7 +21,7 @@
 // //   componentDidMount () {
 // //     axios(`${apiUrl}/questions/${this.props.match.params.id}`)
 // //       .then(res => {
-// //         console.log(res)
+// //         // console.log(res)
 // //         // Fill up state
 // //         this.setState({ question: res.data.question })
 // //       })
