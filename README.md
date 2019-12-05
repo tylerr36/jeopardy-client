@@ -10,7 +10,7 @@ This app allows users to create questions with corresponding answers, designed s
 1. Fork and clone this repository
 2. Change into the new directory
 3. Install dependencies with `npm install`.
-4. Run `git checkout -b yournewbranch` with a branch name of your choice in place of "yournewbranch" to create the check out to your new branch.
+4. Run `git checkout -b yournewbranch` with a branch name of your choice in place of "yournewbranch" to create and check out to your new branch.
 
 ## Technologies Used
   - React
