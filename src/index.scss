@@ -1,16 +1,26 @@
 @import '~bootstrap/scss/bootstrap';
-h1 {
-  color: #0F00DD;
-}
+// h1 {
+//   color: #0F00DD;
+// }
 
 #root {
-  color: #0F00DD;
-}
-
-.navbar {
   color: #FBE556;
+  text-shadow: 2px 2px #000000;
 }
 
-.bg-primary {
-    background-color: #0F00DD !important;
+// .navbar {
+//   color: #FBE556;
+// }
+
+// .bg-primary {
+//     background-color: #0F00DD !important;
+// }
+
+body {
+  background-attachment: fixed;
+  background-image: url('./images/jeopardy-pink.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding-top: 0;
 }

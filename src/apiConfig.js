@@ -1,7 +1,7 @@
 let apiUrl
 const apiUrls = {
   production: 'https://secure-plains-22928.herokuapp.com/',
-  development: 'https://tylerr36.github.io/jeopardy-client'
+  development: 'http://localhost:4741'
 }
 
 if (window.location.hostname === 'localhost') {
