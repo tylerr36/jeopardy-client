@@ -100,7 +100,6 @@ const Question = props => {
 
   const handleUpdate = event => {
     event.preventDefault()
-    console.log(props.match)
     axios({
       url: `${apiUrl}/questions/${props.match.params.id}`,
       method: 'PATCH',

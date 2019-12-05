@@ -10,7 +10,6 @@ const Questions = props => {
 
   // make an API call
   useEffect(() => {
-    console.log(props)
     axios({
       url:`${apiUrl}/questions`,
       method: 'GET',
