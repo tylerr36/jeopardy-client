@@ -24,8 +24,8 @@ const CreateQuestion = props => {
       data: { question }
     })
       .then(response => {
-        props.alert({ heading: 'Great question!', message: 'Why not create another!', variant: 'success' })
-        // props.history.push(`/questions/${response.data.question._id}`)
+        props.alert({ heading: 'Great question!', message: 'Create another!', variant: 'success' })
+        props.history.push(`/questions`)
       })
       .catch(console.error)
   }
