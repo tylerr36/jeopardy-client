@@ -14,6 +14,7 @@ This app allows users to create questions with corresponding answers, designed s
   - Git
 
 ## The Approach
+My approach was to first understand what I wanted for an application. I then thought about what from that idea could be accomplished within the 
 Day one began with pair-programming, before each team member felt comfortable enough to work on his or her own. All branch pushes and pulls to or from the development branch were done as a team to minimize any risk of merge conflicts. After completing wireframes, user stories, and our ERD, we diligently planned out all of the files and folders that we anticipated needing throughout the project. we normally start out our day with morning stand to plan out what we need to target as a team and individual.
 
 After testing all CRUD actions on the backend, we built Handlebars templates for the auth, event, and rsvp actions. We then began testing the actions from the front end. After successfully implementing all client-side functions and AJAX calls, we began styling the app and adjusting Handlebars templates.
