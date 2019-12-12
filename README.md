@@ -1,4 +1,7 @@
 # Jeopardy!
+
+![Screenshot](https://i.imgur.com/nf5gnfd.png)
+
 This app allows users to create questions with corresponding answers, designed so that enough questions are added to create an interactive trivia game. When viewing all questions, the answers are hidden until the user clicks the question. Once viewing the answer, the user has the ability modify the question or answer, as well as the option to delete the question entirely.
 
 ## Important Links
@@ -32,7 +35,6 @@ Styling changed were added as a final step.
 
 [User Stories](https://i.imgur.com/cI2JEQO.png)
 
-![Screenshot](https://i.imgur.com/nf5gnfd.png)
 
 ## Future Goals
 - Create question categories, with five questions being assigned to each category.
